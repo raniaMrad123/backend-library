@@ -27,6 +27,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       database: 'library',
       autoLoadEntities: true,
       synchronize: true,
+     connectorPackage: 'mysql2', // nécessaire pour MySQL 9
     }),
     AuthModule,
     ConfigModule.forRoot()
